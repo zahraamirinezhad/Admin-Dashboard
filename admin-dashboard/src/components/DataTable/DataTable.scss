@@ -1,0 +1,98 @@
+.container {
+  padding: 2rem;
+
+  .addNewUserContainer {
+    margin-bottom: 1rem;
+
+    .addNewUser {
+      color: var(--text);
+      border: 1px dashed var(--light-dark);
+      padding: 0.5rem 1rem;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        color: white;
+        border: 1px solid var(--light-dark);
+        background-color: var(--light-dark);
+      }
+    }
+  }
+
+  .tableContainer {
+    height: 50rem;
+
+    * {
+      color: var(--text);
+    }
+  }
+
+  .cellWrapper {
+    display: flex;
+    align-items: center;
+
+    .productImg {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      margin-right: 0.5rem;
+      object-fit: cover;
+    }
+  }
+
+  .status {
+    padding: 0.5rem;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+
+    &.active {
+      color: green;
+      background-color: rgba(0, 128, 0, 0.151);
+    }
+
+    &.pending {
+      color: goldenrod;
+      background-color: rgba(189, 189, 3, 0.103);
+    }
+
+    &.passive {
+      color: crimson;
+      background-color: rgba(255, 0, 0, 0.05);
+    }
+  }
+
+  .cellAction {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    div {
+      padding: 5px 5px;
+      border-radius: 7px;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .viewButton {
+      color: darkblue;
+      background-color: var(--item-bg);
+    }
+
+    .viewButton:hover {
+      color: white;
+      background-color: darkblue;
+    }
+
+    .deleteButton {
+      color: crimson;
+      background-color: var(--item-bg);
+    }
+
+    .deleteButton:hover {
+      color: white;
+      background-color: crimson;
+    }
+  }
+}

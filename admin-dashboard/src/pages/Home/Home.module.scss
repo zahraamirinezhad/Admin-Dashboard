@@ -1,0 +1,26 @@
+.container {
+  background-color: var(--bg);
+  .widgets,
+  .charts {
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .charts {
+    padding: 1rem;
+  }
+
+  .listContainer {
+    box-shadow: 5px 5px 10px var(--shadow);
+    padding: 1rem;
+    margin: 1rem;
+
+    .listTitle {
+      color: var(--dark);
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+

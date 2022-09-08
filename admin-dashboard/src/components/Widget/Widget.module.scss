@@ -1,0 +1,82 @@
+.widget {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  padding: 1rem;
+  box-shadow: 5px 5px 10px var(--shadow);
+  background-color: var(--item-bg);
+  border-radius: 8px;
+  height: 200px;
+
+  .left,
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .left {
+    color: var(--text);
+
+    .title {
+      font-weight: bold;
+      font-size: 1rem;
+      color: var(--light);
+    }
+
+    .counter {
+      font-size: 3rem;
+      font-weight: 300;
+    }
+
+    .link {
+      width: max-content;
+      font-size: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+  }
+
+  .right {
+    .percentage {
+      display: flex;
+      align-items: center;
+      font-size: 1.5rem;
+
+      &.positive {
+        color: green;
+      }
+
+      &.negative {
+        color: red;
+      }
+    }
+
+    .icon {
+      font-size: 2.5rem;
+      padding: 0.5rem;
+      border-radius: 5px;
+      align-self: flex-end;
+
+      &.users {
+        color: crimson;
+        background-color: rgba(255, 0, 0, 0.2);
+      }
+
+      &.orders {
+        color: goldenrod;
+        background-color: rgba(218, 165, 32, 0.2);
+      }
+
+      &.earnings {
+        color: green;
+        background-color: rgba(0, 128, 0, 0.2);
+      }
+
+      &.balance {
+        color: purple;
+        background-color: rgba(128, 0, 128, 0.2);
+      }
+    }
+  }
+}

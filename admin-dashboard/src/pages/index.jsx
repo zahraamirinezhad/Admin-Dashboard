@@ -1,0 +1,5 @@
+export { default as Home } from './Home/Home'
+export { default as Login } from './Login/Login'
+export { default as List } from './List/List'
+export { default as SinglePage } from './SinglePage/SinglePage'
+export { default as NewPage } from './NewPage/NewPage'
