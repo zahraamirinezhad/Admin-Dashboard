@@ -10,7 +10,7 @@ Used Packages :
 <br />
 [react-circular-progressbar](https://www.npmjs.com/package/react-circular-progressbar/)
 <br />
-[react-router-doml](https://www.npmjs.com/package/react-router-dom/)
+[react-router-dom](https://www.npmjs.com/package/react-router-dom/)
 <br />
 [recharts](https://recharts.org/en-US/)
 <br />
